@@ -6,8 +6,8 @@ const ProjectsCard = () => {
 
             <CardTitle title="Projects" />
             <h3>Current</h3>
-            <span>Monyze</span>
-            <p>A monthly newsletter that contains startups funded previous month with key data.</p>
+            <span>Blog</span>
+            <p>Mauris consequat tellus sapien.</p>
         </div>
     )
 }

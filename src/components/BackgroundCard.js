@@ -1,22 +1,20 @@
 import React from 'react';
+import CardTitle from './CardTitle'
 
 const BackgroundCard = () => {
     return (
         <div>
-            <div className="title">
-            <h2>Background</h2>
-            <hr className="solid"/>
-
-            </div>
+            <CardTitle title="Background" />
+            
             <h3>Present</h3>
             <ul>
-                <li>Studying for a master's in Artificial Intelligence</li>
+                <li>Ut accumsan, libero eu cursus blandit, arcu ex malesuada dui, eget commodo quam lorem id sapien.</li>
             </ul>
             <h3>Past</h3>
             <ul>
-                <li>Graduated from Özyeğin University with a degree in Computer Science (2020)</li>
-                <li>Graduated from Edremit Anatolian Highschool with high school diploma (2015)</li>
-                <li>My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.</li>
+                <li>Mauris consequat tellus sapien. (2020)</li>
+                <li>Mauris consequat tellus sapien. (2015)</li>
+                <li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut accumsan, libero eu cursus blandit, arcu ex malesuada dui, eget commodo quam lorem id sapien. </li>
             </ul>
         </div>
     )

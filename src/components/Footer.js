@@ -9,7 +9,7 @@ const Footer = () => {
             </div>
             <div className="footer__text">
                 <p>Mert Özgün - 2020</p>
-                <p>mert@mertozgun.me</p>
+                <p>xxx@xxx.com</p>
             </div>
         </>
     )

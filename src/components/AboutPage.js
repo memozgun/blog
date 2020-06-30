@@ -3,7 +3,10 @@ import HeroCard from './HeroCard'
 import ProjectsCard from './ProjectsCard'
 import BackgroundCard from './BackgroundCard'
 import KnowledgeCard from './KnowledgeCard'
+import PostsCard from './PostsCard'
+
 import Footer from './Footer'
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
     return (
@@ -12,6 +15,9 @@ const AboutPage = () => {
             <ProjectsCard />
             <BackgroundCard />
             <KnowledgeCard />
+            <PostsCard />
+
+
             <Footer />
         </div>
     )
