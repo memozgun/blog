@@ -1,0 +1,20 @@
+import React from 'react';
+import HeroCard from './HeroCard'
+import ProjectsCard from './ProjectsCard'
+import BackgroundCard from './BackgroundCard'
+import KnowledgeCard from './KnowledgeCard'
+import Footer from './Footer'
+
+const AboutPage = () => {
+    return (
+        <div className="content-container">
+            <HeroCard />
+            <ProjectsCard />
+            <BackgroundCard />
+            <KnowledgeCard />
+            <Footer />
+        </div>
+    )
+}
+
+export { AboutPage as default }
