@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
@@ -9,7 +9,7 @@ import { startSetPosts } from './actions/posts'
 import { login, logout } from './actions/auth';
 import { firebase } from './firebase/firebase';
 
-const store = configureStore();
+export const store = configureStore();
 
 
 const jsx = (
@@ -19,32 +19,21 @@ const jsx = (
 );
 
 let hasRendered = false;
-const renderApp = () => {
+export const renderApp = () => {
   if(!hasRendered){
     ReactDOM.render(jsx, document.getElementById('root'));
     hasRendered = true;
   }
 }
 
+store.dispatch(startSetPosts()).then(() => {
+  console.log("done");
+  renderApp()
 
-firebase.auth().onAuthStateChanged((user) => {
-  if(user){
-    store.dispatch(login(user.uid))
-    console.log('uid', user.uid);
-    store.dispatch(startSetPosts()).then(() => {
-      renderApp()
-      if(history.location.pathname === "/admin") {
-        history.push('/admin/dashboard')
-      }
-    });
-  } else {
-    console.log("logged out");
-
-    store.dispatch(logout());
-    renderApp();
-    //history.push("/")
-  }
 })
+
+
+
 
 
 // If you want your app to work offline and load faster, you can change

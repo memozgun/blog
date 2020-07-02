@@ -1,4 +1,6 @@
 import { firebase, googleAuthProvider } from '../firebase/firebase'
+import { store, renderApp } from '../index'
+import AppRouter, { history } from '../routers/AppRouter';
 
 export const login = (uid) => ({
     type: 'LOGIN',
@@ -16,6 +18,10 @@ export const startLogin = () => {
 }
 
 export const startLogout = () => {
+    store.dispatch(logout());
+    renderApp();
+    history.push("/")
+    
     return () => {
         return firebase.auth().signOut()
     }

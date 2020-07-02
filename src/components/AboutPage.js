@@ -17,6 +17,7 @@ const AboutPage = () => {
             <KnowledgeCard />
             <PostsCard />
 
+            <Link to="/admin"><p>Admin</p></Link>
 
             <Footer />
         </div>

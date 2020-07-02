@@ -2,8 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth'
 
+
 export const LogoutButton = ({ startLogout  }) => {
     
+
     return (
         <div className="box-layout">
         <div className="box-layout__box"> 
