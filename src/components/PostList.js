@@ -18,7 +18,7 @@ export const PostList = (props) => (
 
           props.posts.slice(0, props.showItems || props.posts.length).map((post) => {
             return (
-                <PostItem from={props.from} {...post}/>
+                <PostItem key={post.id}from={props.from} {...post}/>
             )
           })
         )

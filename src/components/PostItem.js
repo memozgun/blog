@@ -9,7 +9,7 @@ export const PostItem = ({ from, text, slug, title, createdAt }) => (
            
     <div>
             <Link to={`/${from}/${slug}`}>
-                {console.log(from)}
+
                 <h1>{title}</h1>
             </Link>
             <h3>{createdAt}</h3>
