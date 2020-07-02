@@ -1,8 +1,6 @@
 import * as firebase from 'firebase';
-import dotenv from 'dotenv'
 
-dotenv.config()
-
+console.log("asdas", process.env.REACT_APP_ALLOWED_UID);
 var firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,

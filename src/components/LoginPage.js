@@ -10,24 +10,22 @@ import { store, renderApp } from '../index'
 
 firebase.auth().onAuthStateChanged((user) => {
     if(user){
+        
       store.dispatch(login(user.uid))
       console.log('uid', user.uid);
+      console.log('env', process.env.REACT_APP_ALLOWED_UID);
+      if(user.uid !== process.env.REACT_APP_ALLOWED_UID){
+        store.dispatch(logout())
+
+      }
       store.dispatch(startSetPosts()).then(() => {
         renderApp()
         if(history.location.pathname === "/admin") {
           history.push('/admin/dashboard')
         }
       });
-    } else {
-      console.log("logged out");
-  
-      //store.dispatch(logout());
-      renderApp();
-      //history.push("/")
-    }
+    } 
   })
-  
-
   
 export const LoginPage = ({ startLogin }) => (
     <div className="box-layout">
