@@ -1,8 +1,9 @@
 .title {
-    color: #555555;
+    color: $dark-gray;
     text-decoration: none;
-    margin-top: $xl-size;
+    
     h2 {
         margin: 0;
+        font-weight: 700;
     }
 }

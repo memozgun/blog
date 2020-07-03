@@ -2,7 +2,7 @@ import React from 'react'
 import CardTitle from './CardTitle'
 const ProjectsCard = () => {
     return (
-        <div>
+        <div className="card">
 
             <CardTitle title="Projects" />
             <h3>Current</h3>

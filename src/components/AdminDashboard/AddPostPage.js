@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import 'react-markdown-editor-lite/lib/index.css';
 import Interweave from 'interweave'
 import ReactMarkdown from 'react-markdown'
-import { startAddPost } from '../actions/posts'
+import { startAddPost } from '../../actions/posts'
 import moment from 'moment';
 import PostForm from './PostForm'
 
@@ -13,7 +13,7 @@ class AddPostPage extends React.Component {
 		super(props)
 		
 		this.state = {
-			text: '',
+			shortHtml: '',
 			html: '',
 			title: '',
 			slug: '',
@@ -46,7 +46,8 @@ class AddPostPage extends React.Component {
         </div>
       </div>
         <div className="content-container">
-		<ReactMarkdown source={this.state.text} />
+		<Interweave content={this.state.html} />
+
         </div>
       </div>
     );

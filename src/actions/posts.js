@@ -27,14 +27,15 @@ export const startEditPost = (id, updates) => {
 export const startAddPost = (postData = {}) => {
     return (dispatch, getState) => {
       const {
-        text = '',
+        shortHtml = '',
         html = '',
         slug = '',
         title = '',
         createdAt = 0,
       } = postData;
+      console.log(postData);
 
-      const post = { text, html, slug, title, createdAt };
+      const post = { html, shortHtml, slug, title, createdAt };
       //const uid = getState().auth.uid;
   
       return database.ref(`posts`).push(post).then((ref) => {

@@ -7,11 +7,11 @@ import PostItem from './PostItem';
 
 export const PostList = (props) => (
   
-    <div>
+    <div className="list-body">
 
     {
       props.posts.length === 0 ? (
-        <div >
+        <div className="list-item list-item--message">
           <span>No posts</span>
         </div>
       ) : (

@@ -1,0 +1,57 @@
+.card {
+    color: $dark-gray;
+    margin-bottom: $l-size;
+    h3 {
+        margin-top: 1.2rem;
+        text-decoration: none;
+
+        margin-bottom: 0rem;
+    }
+    ul {
+        margin: 0 $s-size;
+        padding-left: $m-size;
+    }
+}
+
+.card--hero {
+    display: flex;
+    justify-content: right;
+    align-items: stretch;;
+    margin: 0.8rem 0  0 0;
+
+    img {
+        margin-left: $m-size;
+        @media (max-width: $desktop-breakpoint) {
+            display: none;
+          }
+    }
+
+    h1 {
+        margin-top: 0;
+        line-height: 1
+    }
+}
+
+
+
+.card--blog {
+    
+    h3 {    
+        color: $dark-gray;
+        font-weight: 300;
+        font-size: $font-size-large;
+        border: none;
+        font-weight: 600;
+        text-decoration: underline;
+        line-height: 1;
+    }
+    p {
+
+    }
+
+}
+
+.createdat__text {
+    font-size: $font-size-medium;
+    margin: 0.8rem 0  0 0;
+}

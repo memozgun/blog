@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ReactMarkdown from 'react-markdown'
 import PostForm from './PostForm'
-import Footer from './Footer'
+import Footer from '../Footer'
 import moment from 'moment';
-import { startEditPost } from '../actions/posts'
+import { startEditPost } from '../../actions/posts'
 
 export class EditPostPage extends React.Component {
 

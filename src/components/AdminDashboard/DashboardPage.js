@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from './Footer'
-import PostList from './PostList'
+import Footer from '../Footer'
+import PostList from '../PostList'
 import { Link } from 'react-router-dom';
-import LogoutButton from './LogoutButton';
+import LogoutButton from '../LogoutButton';
 
 const DashboardPage = () => {
     return (

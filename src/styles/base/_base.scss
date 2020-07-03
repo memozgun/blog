@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  color: #000000;
+
 }
 
 html {
@@ -7,10 +9,10 @@ html {
 }
 
 body {
-  color: $dark-gray;
-  font-family: Muli, cursive;
+  font-family: Inter, cursive;
   font-size: $m-size;
   line-height: 1.6;
+  font-weight: 430;
 }
 
 button {

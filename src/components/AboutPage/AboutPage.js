@@ -5,18 +5,21 @@ import BackgroundCard from './BackgroundCard'
 import KnowledgeCard from './KnowledgeCard'
 import PostsCard from './PostsCard'
 
-import Footer from './Footer'
+import Footer from '../Footer'
 import { Link } from 'react-router-dom';
+import { Header } from '../Header';
 
 const AboutPage = () => {
     return (
         <div className="content-container">
+            <Header />
             <HeroCard />
             <ProjectsCard />
             <BackgroundCard />
             <KnowledgeCard />
             <PostsCard />
 
+           
             <Link to="/admin"><p>Admin</p></Link>
 
             <Footer />

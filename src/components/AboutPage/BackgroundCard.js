@@ -3,7 +3,7 @@ import CardTitle from './CardTitle'
 
 const BackgroundCard = () => {
     return (
-        <div>
+        <div className="card">
             <CardTitle title="Background" />
             
             <h3>Present</h3>

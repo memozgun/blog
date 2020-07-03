@@ -1,0 +1,44 @@
+.header {
+    padding: $s-size $s-size $m-size 0;
+
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1.4rem;
+    @media (min-width: $desktop-breakpoint) {
+        
+    }
+    justify-content: space-between;
+}
+.header__title {
+    display: flex;
+
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    h2 {
+        margin: 0;
+    }
+}
+
+.header__nav {
+    text-decoration: none;
+    p {
+        color: rgb(121, 121, 121);
+        font-size: 1.4rem;
+        &:hover {
+            color: black;
+        }
+
+
+        margin: 0;
+    }
+}
+
+.post-header {
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 700;
+}
