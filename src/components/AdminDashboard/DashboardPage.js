@@ -14,7 +14,6 @@ const DashboardPage = () => {
 
             <PostList from={"admin"}/>
 
-            <Footer />
         </div>
     )
 }

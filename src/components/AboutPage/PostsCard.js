@@ -10,7 +10,7 @@ const PostsCard = () => {
             <CardTitle title="Blog" />
             <PostList from={"blog"} showItems="3"/>
             <Link to={"/blog"}>
-                <p>Show more posts</p>
+                <p className="showmore__link">Show more posts...</p>
             </Link>
         </div>
     )

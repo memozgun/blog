@@ -31,13 +31,16 @@
         margin-bottom: 0;
 
     }
+    h3 {
+        margin-top: 0px;
+    }
 }
 
 .list-body {
     margin-bottom: $m-size;
     
     @media (min-width: $desktop-breakpoint) {
-        margin-bottom: $l-size;
+        margin-bottom: $s-size;
     }
 }
 

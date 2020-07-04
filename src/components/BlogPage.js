@@ -10,7 +10,8 @@ const BlogPage = () => {
             <Header />
             </div>
             <PostList from={"posts"}/>
-
+            
+            <Footer />
         </div>
     )
 }

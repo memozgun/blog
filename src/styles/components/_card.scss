@@ -83,3 +83,15 @@
     font-size: $font-size-medium;
     margin: 0.8rem 0  0 0;
 }
+
+.showmore__link {
+    color: $dark-gray;
+    font-weight: 300;
+    text-decoration: underline;
+    line-height: 1;
+    margin-left: 1.4rem;
+    color: rgba(3, 102, 214, 1);
+    text-decoration-color: rgba(3, 102, 214, 1);
+    font-weight: 600;
+    margin-top: 0;
+}
