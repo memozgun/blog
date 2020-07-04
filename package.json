@@ -20,9 +20,13 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-social-icons": "^4.1.0",
+    "react-social-media-follow": "^1.1.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "slugify": "^1.4.4"
+    "slugify": "^1.4.4",
+    "social-icons": "^1.0.1",
+    "social-media-icons-react": "^1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -16,8 +16,12 @@
 .card--hero {
     display: flex;
     justify-content: right;
-    align-items: stretch;;
+    align-items: initial;
     margin: 0.8rem 0  0 0;
+    @media (max-width: $desktop-breakpoint) {
+        display: flex;
+        flex-direction: column;
+      }
 
     img {
         margin-left: $m-size;
@@ -32,7 +36,31 @@
     }
 }
 
+.card--images {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px 0;
+    padding-left: 1.4rem;
+    
+    @media (max-width: $desktop-breakpoint) {
+        display: none;
+      }
+}
 
+.card--images__mobile {
+    display: none;
+    @media (max-width: $desktop-breakpoint) {
+        display: flex;
+        padding: 10px 0;
+      }
+}
+
+.icon {
+    margin-right: 1.4rem;
+    margin-bottom: 1.4rem;
+}
 
 .card--blog {
     
