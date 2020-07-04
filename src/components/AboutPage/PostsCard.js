@@ -8,7 +8,7 @@ const PostsCard = () => {
     return (
         <div className="card card--blog">
             <CardTitle title="Blog" />
-            <PostList from={"blog"} showItems="3"/>
+            <PostList from={"posts"} showItems="3"/>
             <Link to={"/blog"}>
                 <p className="showmore__link">Show more posts...</p>
             </Link>
