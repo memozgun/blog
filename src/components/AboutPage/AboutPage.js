@@ -22,6 +22,7 @@ const AboutPage = () => {
         <KnowledgeCard />
         <PostsCard />
     
+        <Link to="/admin">Admin</Link>
         <Footer />
         </div>
 
