@@ -10,12 +10,17 @@ export class PostPage extends React.Component {
     render(){
         return (
             <div className="content-container">
+            <div className="content-container__secondary">
+
             <Header />
-                <h1 className="post-header">{this.props.post.title}</h1>
+            <h1 className="post-header">{this.props.post.title}</h1>
                 <h3>{this.props.post.createdAt}</h3>
                 <Interweave content={this.props.post.html} />
 
                 <Footer />
+            
+               
+            </div>
             </div>
         )
     }

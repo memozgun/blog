@@ -20,6 +20,8 @@ export default (state = postsReducerDefaultState, action) => {
                   return post;
                 };
               });
+        case 'REMOVE_POST':
+          return state.filter(({ id }) => id !== action.id)
     
         default:
             return state;

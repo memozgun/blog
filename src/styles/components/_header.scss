@@ -1,12 +1,13 @@
 .header {
-    padding: $s-size $s-size $m-size 0;
+    padding: $s-size 0;
 
 }
 
 .header__content {
     display: flex;
     align-items: center;
-    padding: 0.4rem 1.4rem;
+    padding: 0.4rem 0;
+    margin: 0;
     @media (min-width: $desktop-breakpoint) {
         
     }
@@ -18,7 +19,7 @@
     color: white;
     align-items: center;
     text-decoration: none;
-    h2 {
+    img {
         margin: 0;
     }
 }
@@ -38,7 +39,18 @@
 }
 
 .post-header {
-    font-size: 80px;
-    line-height: 1.1;
-    font-weight: 700;
+    
+    font-weight: 900;
+    letter-spacing: -1px;
+    @media (min-width: $desktop-breakpoint) {
+        font-size: 80px;
+        line-height: 1.1;
+        letter-spacing: -3px;
+
+    }
+}
+
+.header--secondary {
+    margin: 0 0.7rem
+
 }

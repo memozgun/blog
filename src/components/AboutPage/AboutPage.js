@@ -12,17 +12,21 @@ import { Header } from '../Header';
 const AboutPage = () => {
     return (
         <div className="content-container">
-            <Header />
-            <HeroCard />
-            <ProjectsCard />
-            <BackgroundCard />
-            <KnowledgeCard />
-            <PostsCard />
+        <div className="content-container__about">
+        <Header />
+            
+            
+        <HeroCard />
+        <ProjectsCard />
+        <BackgroundCard />
+        <KnowledgeCard />
+        <PostsCard />
+    
+        <Link to="/admin"><p>Admin</p></Link>
 
-           
-            <Link to="/admin"><p>Admin</p></Link>
+        <Footer />
+        </div>
 
-            <Footer />
         </div>
     )
 }

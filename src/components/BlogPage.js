@@ -5,10 +5,12 @@ import { Header } from './Header';
 const BlogPage = () => {
     return (
         <div className="content-container">
-            <Header />
+                <div className="content-container__secondary">
 
+            <Header />
+            </div>
             <PostList from={"posts"}/>
-            <Footer />
+
         </div>
     )
 }

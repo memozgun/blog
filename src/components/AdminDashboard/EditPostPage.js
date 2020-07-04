@@ -4,13 +4,17 @@ import ReactMarkdown from 'react-markdown'
 import PostForm from './PostForm'
 import Footer from '../Footer'
 import moment from 'moment';
-import { startEditPost } from '../../actions/posts'
+import { startEditPost, startRemovePost } from '../../actions/posts'
 
 export class EditPostPage extends React.Component {
 
     onSubmit = (post) => {
         this.props.startEditPost(this.props.post.id, post);
         this.props.history.push('/admin/dashboard');
+    }
+    onRemovePost = ()=> {
+        this.props.startRemovePost({ id: this.props.post.id })
+        this.props.history.push("/admin/dashboard")
     }
     render(){
         return (
@@ -21,6 +25,7 @@ export class EditPostPage extends React.Component {
                         post={this.props.post}
                         onSubmit={this.onSubmit}
                     />
+                    <button onClick={this.onRemovePost}>Remove Post</button>
 
                 </div>
             </div>
@@ -34,7 +39,8 @@ const mapStateToProps = (state, props) => ({
   });
 
   const mapDispatchToProps = (dispatch, props) => ({
-    startEditPost: (id, post) => dispatch(startEditPost(id, post))
+    startEditPost: (id, post) => dispatch(startEditPost(id, post)),
+    startRemovePost: (id) => dispatch(startRemovePost(id))
   });
   
   export default connect(mapStateToProps, mapDispatchToProps)(EditPostPage);

@@ -51,7 +51,19 @@ export const startAddPost = (postData = {}) => {
     type: 'SET_POSTS',
     posts
   });
+
+  export const removePost = ({ id }) => ({
+    type: 'REMOVE_POST',
+    id
+  });
   
+  export const startRemovePost = ({ id } = {}) => {
+    return (dispatch, get8State) => {
+      return database.ref(`posts/${id}`).remove().then(() => {
+        dispatch(removePost({ id }));
+      })
+    }
+  }
 
   
   export const startSetPosts = () => {
