@@ -19,7 +19,7 @@ export default class PostForm extends React.Component {
 			shortHtml:  props.post ? props.post.shortHtml :'',
 			title:  props.post ? props.post.title : '',
 			slug:  props.post ? props.post.slug : '',
-			createdAt:  props.post ? props.post.createdAt : moment(),
+			createdAt:  props.post ? props.post.createdAt : '',
 		}
 	}
 	

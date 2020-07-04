@@ -17,7 +17,7 @@ class AddPostPage extends React.Component {
 			html: '',
 			title: '',
 			slug: '',
-			createdAt: 0
+			createdAt: ''
 		}
 	}
 

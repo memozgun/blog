@@ -31,7 +31,7 @@ export const startAddPost = (postData = {}) => {
         html = '',
         slug = '',
         title = '',
-        createdAt = 0,
+        createdAt = '',
       } = postData;
       console.log(postData);
 
