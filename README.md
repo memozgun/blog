@@ -8,11 +8,9 @@ Admin Page: [https://practical-beaver-b82f57.netlify.app/admin](https://practica
 
 This project was bootstrapped with Create React App.
 
-
-
 ---
 
-To deploy create a .env file in the home directory of the project with following attributes:
+To deploy it yourself, create a .env file in the home directory of the project with following attributes:
 
 ```
 REACT_APP_FIREBASE_API_KEY=XXXXX
@@ -29,10 +27,10 @@ Firebase rules
 
 ```
 {
-/* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
-"rules": {
-".read": true,
-".write": "auth.uid == "GOOGLE_UID",
-}
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+  ".read": true,
+  ".write": "auth.uid == "GOOGLE_UID",
+  }
 }
 ```
